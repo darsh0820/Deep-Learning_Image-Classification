@@ -7,14 +7,16 @@ This project demonstrates a simple feedforward neural network with batch normali
 The model consists of the following layers:
 
 1. **Input Layer**:
-   - Dense layer with 64 neurons and ReLU activation.
    - Batch normalization to stabilize and speed up training.
-
-2. **Hidden Layer**:
    - Dense layer with 64 neurons and ReLU activation.
-   - Batch normalization to further stabilize and speed up training.
+   
 
-3. **Output Layer**:
+3. **Hidden Layer**:
+   - Batch normalization to further stabilize and speed up training.
+   - Dense layer with 64 neurons and ReLU activation.
+
+5. **Output Layer**:
+   - Batch normalization to further stabilize and speed up training.
    - Dense layer with 10 neurons and softmax activation for multi-class classification.
 
 ## Batch Normalization
