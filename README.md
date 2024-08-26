@@ -1,4 +1,4 @@
-# Deep Learning Algorithms Overview
+# Deep Learning Algorithms
 
 This repository provides an overview of various deep learning algorithms, focusing on their structures, use cases, and implementation in Python using TensorFlow/Keras. The models discussed include:
 
