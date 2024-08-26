@@ -6,6 +6,19 @@ This repository provides an overview of various deep learning algorithms, focusi
 2. **Convolutional Neural Networks (CNN)**
 3. **Recurrent Neural Networks (RNN)**
 
+## Batch Normalization
+Batch normalization is used to normalize the outputs of the Dense layers. This helps in:
+- Reducing internal covariate shift
+- Speeding up the training process
+- Reducing the sensitivity to initialization
+- Improving generalization
+  
+## Requirements
+1. Python 3
+2. TensorFlow
+3. Keras
+4. NumPy
+
 ## 1. Multilayer Perceptron (MLP)
 
 ### Overview
@@ -76,3 +89,6 @@ model.add(layers.LSTM(128, input_shape=(28, 28)))
 model.add(layers.Dense(64, activation='relu'))
 model.add(layers.Dense(10, activation='softmax'))
 ```
+
+## Acknowledgments
+This project is built using TensorFlow and Keras, inspired by standard neural network practices including batch normalization for improving model performance.
