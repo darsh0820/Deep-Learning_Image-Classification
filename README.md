@@ -76,7 +76,6 @@ Recurrent Neural Networks (RNNs) are designed for sequential data where the orde
 ### Architecture
 - **LSTM/GRU Layers**: Special types of RNN layers that are capable of learning long-term dependencies in sequence data.
 - **Dense Layers**: After the sequence processing, one or more dense layers are used for final predictions.
-- 
 ### Use Cases
 - RNNs are ideal for tasks involving sequences, such as:
    - Time series forecasting
