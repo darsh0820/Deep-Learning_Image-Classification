@@ -5,6 +5,7 @@ This repository provides an overview of various deep learning algorithms for ima
 1. **Multilayer Perceptron (MLP)**
 2. **Convolutional Neural Networks (CNN)**
 3. **Recurrent Neural Networks (RNN)**
+4. **Long Short-Term Memory (LSTM)**
 
 ## Batch Normalization
 Batch normalization is used to normalize the outputs of the Dense layers. This helps in:
