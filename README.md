@@ -20,7 +20,6 @@ Batch normalization is used to normalize the outputs of the Dense layers. This h
 4. NumPy
 
 ## 1. Multilayer Perceptron (MLP)
-
 ### Overview
 The Multilayer Perceptron (MLP) is a fundamental class of feedforward artificial neural networks. An MLP consists of at least three layers of nodes: an input layer, one or more hidden layers, and an output layer. Except for the input nodes, each node is a neuron that uses a nonlinear activation function.
 
@@ -77,16 +76,39 @@ Recurrent Neural Networks (RNNs) are designed for sequential data where the orde
 ### Architecture
 - **LSTM/GRU Layers**: Special types of RNN layers that are capable of learning long-term dependencies in sequence data.
 - **Dense Layers**: After the sequence processing, one or more dense layers are used for final predictions.
+- 
 ### Use Cases
 - RNNs are ideal for tasks involving sequences, such as:
    - Time series forecasting
    - Natural language processing (NLP)
    - Sequence-to-sequence models (e.g., translation, text generation)
+
 ### Example
 ```python
 model = models.Sequential()
 model.add(layers.LSTM(128, input_shape=(28, 28)))
 model.add(layers.Dense(64, activation='relu'))
+model.add(layers.Dense(10, activation='softmax'))
+```
+
+## 4. Long Short-Term Memory (LSTM)
+### Overview
+Long Short-Term Memory (LSTM) networks are a special kind of RNN capable of learning long-term dependencies in sequences. Traditional RNNs can suffer from problems like vanishing and exploding gradients, making it difficult for them to learn long-range dependencies. LSTMs address these issues by learning which data is important to retain and which can be discarded, effectively managing information over longer sequences.
+
+### Architecture
+- **LSTM/GRU Layers**: Special types of RNN layers that are capable of learning long-term dependencies in sequence data.
+- **Dense Layers**: After the sequence processing, one or more dense layers are used for final predictions.
+
+### Use Cases
+- RNNs like LSTMs are useful for tasks involving sequences where the order of the input matters. Common use cases include:
+  - Time series forecasting
+  - Natural Language Processing (NLP)
+  - Sequence-to-sequence models (e.g., translation, text generation)
+ 
+### Example
+```python
+model = models.Sequential()
+model.add(layers.LSTM(128, input_shape=(28, 28), activation='relu'))
 model.add(layers.Dense(10, activation='softmax'))
 ```
 
